@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dreamy Movies — Book</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ctext y='32' font-size='32'%3E%F0%9F%8E%AC%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand__logo" aria-hidden="true">🎬</span>
+      Dreamy <span>Movies</span>
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="movies.html">Movies</a>
+      <a href="upcoming.html">Upcoming</a>
+      <a href="bookings.html">My bookings</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <form class="header-search" id="header-search-form" role="search">
+      <input type="text" id="header-search" placeholder="Search movies…" aria-label="Search movies" />
+      <button type="submit" aria-label="Search">🔍</button>
+    </form>
+  </header>
+
+  <main class="movie-page" id="movie-detail">
+    <a class="back-link" href="movies.html">← All movies</a>
+
+    <div class="movie-detail__top">
+      <div id="movie-poster"></div>
+      <div>
+        <p id="movie-genre"></p>
+        <h1 id="movie-title"></h1>
+        <p id="movie-meta"></p>
+        <p id="movie-synopsis"></p>
+      </div>
+    </div>
+
+    <form class="booking-form" id="booking-form">
+      <h2>Choose your date, showtime and ticket</h2>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="date-input">Date</label>
+          <input type="date" id="date-input" required />
+          <span class="field-error" id="date-input-error">Pick a date from today onward.</span>
+        </div>
+      </div>
+
+      <span class="booking-form__label">Showtime</span>
+      <div id="showtime-list"></div>
+      <div id="tier-list"></div>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="qty">Quantity</label>
+          <input type="number" id="qty" min="1" max="10" value="1" />
+        </div>
+        <div class="form-field">
+          <label for="buyer-name">Full name</label>
+          <input type="text" id="buyer-name" required placeholder="As it should appear on the ticket" />
+        </div>
+        <div class="form-field">
+          <label for="buyer-contact">Email or phone</label>
+          <input type="text" id="buyer-contact" required placeholder="you@example.com" />
+          <span class="field-error" id="buyer-contact-error">Enter a valid email or phone number.</span>
+        </div>
+      </div>
+
+      <div class="total-row">
+        <span>Total</span>
+        <span id="total-price"></span>
+      </div>
+
+      <button type="submit" class="submit-btn">Confirm booking</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    Dreamy Movies · A student project. Bookings are saved in your own browser only.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

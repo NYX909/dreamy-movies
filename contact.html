@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dreamy Movies — Contact</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ctext y='32' font-size='32'%3E%F0%9F%8E%AC%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand__logo" aria-hidden="true">🎬</span>
+      Dreamy <span>Movies</span>
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="movies.html">Movies</a>
+      <a href="upcoming.html">Upcoming</a>
+      <a href="bookings.html">My bookings</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <form class="header-search" id="header-search-form" role="search">
+      <input type="text" id="header-search" placeholder="Search movies…" aria-label="Search movies" />
+      <button type="submit" aria-label="Search">🔍</button>
+    </form>
+  </header>
+
+  <main class="movie-page" id="contact-page">
+    <a class="back-link" href="index.html">← Home</a>
+
+    <p id="movie-genre">About &amp; contact</p>
+    <h1 id="movie-title">We'd love to hear from you</h1>
+    <p id="movie-meta">Dreamy Movies is a small student-run ticketing site built for our school exhibition.</p>
+    <p id="movie-synopsis">
+      Every showtime you see here is real, but bookings made on this demo stay on your own device —
+      nothing is sent to a server. If you have a question about a movie, a booking, or this
+      project itself, reach us with the details below or send a message.
+    </p>
+
+    <div id="tier-list">
+      <div class="tier-option">
+        <span class="tier-option__name">Email</span>
+        <span class="tier-option__price">hello@dreamymovies.lk</span>
+      </div>
+      <div class="tier-option">
+        <span class="tier-option__name">Phone</span>
+        <span class="tier-option__price">+94 77 123 4567</span>
+      </div>
+      <div class="tier-option">
+        <span class="tier-option__name">Address</span>
+        <span class="tier-option__price">Colombo, Sri Lanka</span>
+      </div>
+      <div class="tier-option">
+        <span class="tier-option__name">Box office hours</span>
+        <span class="tier-option__price">Daily, 9am–11pm</span>
+      </div>
+    </div>
+
+    <form class="booking-form" id="contact-form">
+      <h2>Send us a message</h2>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="contact-name">Full name</label>
+          <input type="text" id="contact-name" required placeholder="Your name" />
+        </div>
+        <div class="form-field">
+          <label for="contact-email">Email or phone</label>
+          <input type="text" id="contact-email" required placeholder="you@example.com" />
+          <span class="field-error" id="contact-email-error">Enter a valid email or phone number.</span>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-field">
+          <label for="contact-message">Message</label>
+          <input type="text" id="contact-message" required placeholder="How can we help?" />
+        </div>
+      </div>
+
+      <button type="submit" class="submit-btn">Send message</button>
+      <p class="empty-state" id="contact-status" style="display:none;"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    Dreamy Movies · A student project. Bookings are saved in your own browser only.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

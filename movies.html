@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dreamy Movies — All movies</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ctext y='32' font-size='32'%3E%F0%9F%8E%AC%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand__logo" aria-hidden="true">🎬</span>
+      Dreamy <span>Movies</span>
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="movies.html">Movies</a>
+      <a href="upcoming.html">Upcoming</a>
+      <a href="bookings.html">My bookings</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <form class="header-search" id="header-search-form" role="search">
+      <input type="text" id="header-search" placeholder="Search movies…" aria-label="Search movies" />
+      <button type="submit" aria-label="Search">🔍</button>
+    </form>
+  </header>
+
+  <section class="hero hero--banner">
+    <img class="hero__img" src="https://picsum.photos/seed/dreamy-marquee/1600/600" alt="" />
+    <div class="hero__inner">
+      <h1>All movies</h1>
+      <p>Everything showing this week. Filter by genre, or search from the box in the corner.</p>
+  
+    </div>
+  </section>
+
+  <div id="filter-bar"></div>
+
+  <div id="movie-grid"></div>
+
+  <footer class="site-footer">
+    Dreamy Movies · A student project. Bookings are saved in your own browser only.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

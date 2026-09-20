@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dreamy Movies — Book your seat</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ctext y='32' font-size='32'%3E%F0%9F%8E%AC%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="home-page">
+
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand__logo" aria-hidden="true">🎬</span>
+      Dreamy <span>Movies</span>
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="movies.html">Movies</a>
+      <a href="upcoming.html">Upcoming</a>
+      <a href="bookings.html">My bookings</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <form class="header-search" id="header-search-form" role="search">
+      <input type="text" id="header-search" placeholder="Search movies…" aria-label="Search movies" />
+      <button type="submit" aria-label="Search">🔍</button>
+    </form>
+  </header>
+
+  <section class="hero hero--banner">
+    <img class="hero__img" src="https://picsum.photos/seed/dreamy-cinema-night/1600/600" alt="" />
+    <div class="hero__inner">
+      <p class="hero__welcome">Welcome to Dreamy Movies 🎬</p>
+      <h1>Warm seats, big screens, and the whole week's lineup.</h1>
+      <p>
+        We're glad you're here. Pick a film, choose a showtime, and your ticket is
+        ready before the popcorn is. Everything showing this week is one tap away.
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--solid" href="movies.html">Browse movies</a>
+        <a class="btn" href="upcoming.html">See what's coming</a>
+      </div>
+  
+    </div>
+  </section>
+
+  <section class="about-section" id="about">
+    <h2>About us</h2>
+    <p>
+      Dreamy Movies is a small movie-ticket booking site built for our school exhibition.
+      It brings together everything showing this week — sci-fi, comedy, action, drama and more —
+      across four screens, so picking a movie and a showtime takes a minute, not an errand.
+    </p>
+    <p>
+      Everything runs right in your browser: pick a showtime and a ticket type, fill in your
+      details, and you get an instant confirmation with a reference code. No server, no sign-up.
+      Your tickets stay on the My bookings page whenever you need them again.
+    </p>
+  </section>
+
+  <section class="highlights">
+    <h2>Now showing</h2>
+    <p class="highlights__intro">A few of the films on screen this week.</p>
+    <div id="home-highlights"></div>
+  </section>
+
+  <footer class="site-footer">
+    Dreamy Movies · A student project. Bookings are saved in your own browser only.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
