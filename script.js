@@ -166,7 +166,7 @@ const UPCOMING = [
     language: "English",
     rating: "16+",
     releaseDate: "14 November 2026",
-    synopsis: "A dock worker discovers the shipping crates coming into her port are never opened twice."
+    synopsis: "A dock worker discovers the shipping crates coming into his port are never opened twice."
   }
 ];
 
